@@ -286,7 +286,7 @@ def mmm(ids,names,passlist):
 			pas = fikr.replace('First',first).replace('Last',last).replace('first',ps).replace('last',ps2)
 			ua=random.choice(ugen)
 			
-			session.headers.update({'authority': 'mbasic.facebook.com',
+			session.headers.update({'Host': 'mbasic.facebook.com',
             'method': 'GET',
             'path': '/login/device-based/login/async/',
             'scheme': 'https',
